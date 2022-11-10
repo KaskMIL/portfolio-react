@@ -1,6 +1,18 @@
-@use '../../../shared/colors.scss';
-@use '../../../shared/fonts.scss';
+@import '../../../shared/colors.scss';
+@import '../../../shared/fonts.scss';
 
 .nav {
   font-family: 'Playfair Display', serif;
+  background-color: $wine;
+  padding: 2rem 0 0 0;
+  height: 100%;
+}
+
+.itemCont {
+  list-style-type: none;
+  text-align: center;
+
+  li {
+    margin-bottom: 1rem;
+  }
 }
