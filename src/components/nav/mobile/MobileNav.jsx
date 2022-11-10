@@ -1,23 +1,19 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import SocialIcons from '../../social/Social';
 import styles from './MobileNav.module.scss';
 
-const MobileNav = ({ children }) => (
+const MobileNav = () => (
   <>
     <nav className={styles.nav}>
-      <ul>
+      <ul className={`${styles.itemCont} ${styles.mobileItems}`}>
         <li>Main</li>
         <li>Portfolio</li>
         <li>Skills</li>
         <li>Let&apos;s talk</li>
       </ul>
+      <SocialIcons />
     </nav>
-    <div>{children}</div>
   </>
 );
-
-MobileNav.propTypes = {
-  children: PropTypes.node.isRequired,
-};
 
 export default MobileNav;
